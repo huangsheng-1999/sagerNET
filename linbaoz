@@ -1,1 +1,369 @@
-c3NyOi8vTmpVdU5Ea3VNVGt6TGpFeU1EbzFNREk2YjNKcFoybHVPbUZsY3kweU5UWXRZMlppT25Cc1lXbHVPbGx1Wkc5ak1uUjVZekowZVUxRVJTOF9jbVZ0WVhKcmN6MDJZV0ZFTlZweGREWmhZVVExV25GeVZsWk9aazVxUVRBbWNISnZkRzl3WVhKaGJUMWtRelYwV2xNNVZGVXhTbFJXVlVrbWIySm1jM0JoY21GdFBTWm5jbTkxY0QwDQpzczovL1lXVnpMVEkxTmkxblkyMDZPRzQyY0hkQlkzSnlkakp3YWpaMFJsa3ljRE5VWWxFMlFERXpOeTQxT1M0MU1pNHhNRGM2TXpNNU9UST0jUG9vbF8lZTklYTYlODMlZTUlOWElYTAlZTklYTYlODMlZTUlOWElYTZJTl8yMDkNCnNzOi8vWVdWekxUSTFOaTFuWTIwNldXZDFjMGd5VFZkQk9GQlhZek53TWxaRWMxSTNRVloyUURFNE5TNDBOQzQzTmk0eE9EZzZNekUzTmpRPSNQb29sXyVlOSVhNiU4MyVlNSU5YSU5ZSVlOSVhNiU4MyVlNSU5YSU5OUdCXzE2NA0Kc3M6Ly9ZV1Z6TFRJMU5pMW5ZMjA2YmpoM05GTjBibUpXUkRsa2JWaFpialJCYW5RNE4wVkJRREU0TlM0ME5DNDNOaTR4T0RnNk16RTFOekk9I1Bvb2xfJWU5JWE2JTgzJWU1JTlhJTllJWU5JWE2JTgzJWU1JTlhJTk5R0JfMTgzDQp2bWVzczovL2V3MEtJQ0FpZGlJNklDSXlJaXdOQ2lBZ0luQnpJam9nSXVtbWcrV2FudW1tZytXYW1VZENYekU0TlNJc0RRb2dJQ0poWkdRaU9pQWlNelV1TVRjNExqWTRMakUxTWlJc0RRb2dJQ0p3YjNKMElqb2dJalEzTmpFeElpd05DaUFnSW1sa0lqb2dJamszWVRSa01UWTNMV0l6TmpFdE5EaGlPQzFpTURBMExUaGlZelExTmpZNVpUTXpOQ0lzRFFvZ0lDSmhhV1FpT2lBaU1DSXNEUW9nSUNKelkza2lPaUFpWVhWMGJ5SXNEUW9nSUNKdVpYUWlPaUFpZEdOd0lpd05DaUFnSW5SNWNHVWlPaUFpYm05dVpTSXNEUW9nSUNKb2IzTjBJam9nSWlJc0RRb2dJQ0p3WVhSb0lqb2dJaThpTEEwS0lDQWlkR3h6SWpvZ0lpSXNEUW9nSUNKemJta2lPaUFpSWcwS2ZRPT0NCnNzOi8vWVdWekxUSTFOaTFuWTIwNmVESXpXalJNUjJ0SFJHdFVhRm81UzJGNk5FUlZVbEZ3UURnMUxqRXdMalV3TGpFMk5EbzBNREE1TXc9PSNQb29sXyVlOSVhNiU4MyVlNSU5YSU5ZiVlOSVhNiU4MyVlNSU5YSVhYUhSXzE5Mg0Kc3M6Ly9ZV1Z6TFRJMU5pMW5ZMjA2VjBOMWVqZDVjbVphVTBOUlVWaFRUbkowUjFCNk1raFVRRGd4TGpFNUxqSXdPQzR4TURjNk5UQXhOamc9I1Bvb2xfJWU5JWE2JTgzJWU1JTlhJTllJWU5JWE2JTgzJWU1JTlhJTk5R0JfMTc5DQpzczovL1lXVnpMVEkxTmkxblkyMDZSbGR5V0dONFVGcHFTbmhCVGpnNWVFeG5jVmt6UVdOd1FEZ3lMakV3TWk0eU5pNHhNVGM2TkRReU16WT0jUG9vbF8lZTklYTYlODMlZTUlOWElYTAlZTklYTYlODMlZTUlOWElYWNJVF8yMTQNCnNzOi8vWVdWekxUSTFOaTFuWTIwNmVESXpXalJNUjJ0SFJHdFVhRm81UzJGNk5FUlZVbEZ3UURFek55NDFPUzQxTWk0eE1EYzZOREF3T1RNPSNQb29sXyVlOSVhNiU4MyVlNSU5YSVhMCVlOSVhNiU4MyVlNSU5YSVhNklOXzIwNQ0Kc3M6Ly9ZV1Z6TFRJMU5pMW5ZMjA2Vm5RMWNFSktSbmRrZEU1Q01qWmpTbUpVV0hodE9EaGFRRGd5TGpFd01pNHlOaTR4TVRjNk5EY3dNamM9I1Bvb2xfJWU5JWE2JTgzJWU1JTlhJWEwJWU5JWE2JTgzJWU1JTlhJWFjSVRfMjEzDQp2bWVzczovL2V3MEtJQ0FpZGlJNklDSXlJaXdOQ2lBZ0luQnpJam9nSWxCdmIyeGY2YWFENVpxczZhYUQ1WnF3VkZkZk16VTRJaXdOQ2lBZ0ltRmtaQ0k2SUNJeU1URXVNak11TVRNeUxqRXlOQ0lzRFFvZ0lDSndiM0owSWpvZ0lqa3lNek1pTEEwS0lDQWlhV1FpT2lBaVltVTFPR1kwWlRRdE9EazBZUzAwTjJWbExUZzRNell0WTJZM05XVTNOR1poT1dNNUlpd05DaUFnSW1GcFpDSTZJQ0kyTkNJc0RRb2dJQ0p6WTNraU9pQWlZWFYwYnlJc0RRb2dJQ0p1WlhRaU9pQWlkM01pTEEwS0lDQWlkSGx3WlNJNklDSnViMjVsSWl3TkNpQWdJbWh2YzNRaU9pQWlJaXdOQ2lBZ0luQmhkR2dpT2lBaUx5SXNEUW9nSUNKMGJITWlPaUFpSWl3TkNpQWdJbk51YVNJNklDSWlEUXA5DQp2bWVzczovL2V3MEtJQ0FpZGlJNklDSXlJaXdOQ2lBZ0luQnpJam9nSXVtbWcrV2FuK21tZytXYXJVaFZYekU1TnlJc0RRb2dJQ0poWkdRaU9pQWlNVGcxTGpJeU5TNDJPUzR4TXpRaUxBMEtJQ0FpY0c5eWRDSTZJQ0kwTlRBNE1TSXNEUW9nSUNKcFpDSTZJQ0l6WXpOaVptUTNOUzFrWXpNd0xUUmxOell0T0RrME1DMDBOMlV4TVRNM1pUSXhaamtpTEEwS0lDQWlZV2xrSWpvZ0lqWTBJaXdOQ2lBZ0luTmplU0k2SUNKaGRYUnZJaXdOQ2lBZ0ltNWxkQ0k2SUNKMFkzQWlMQTBLSUNBaWRIbHdaU0k2SUNKdWIyNWxJaXdOQ2lBZ0ltaHZjM1FpT2lBaUlpd05DaUFnSW5CaGRHZ2lPaUFpTHlJc0RRb2dJQ0owYkhNaU9pQWlJaXdOQ2lBZ0luTnVhU0k2SUNJaURRcDkNCnNzOi8vWVdWekxUSTFOaTFuWTIwNk9HNDJjSGRCWTNKeWRqSndhalowUmxreWNETlVZbEUyUURJd055NHlORFF1TmpjdU1UUTVPak16T1RreSNQb29sXyVlOSVhNiU4MyVlNSU5YSVhZCVlOSVhNiU4MyVlNSU5YSVhYlVTXzUyOQ0Kc3M6Ly9ZV1Z6TFRJMU5pMW5ZMjA2VjBOMWVqZDVjbVphVTBOUlVWaFRUbkowUjFCNk1raFVRREl6TGpneUxqRXhMalE1T2pVd01UWTQjUG9vbF8lZTklYTYlODMlZTUlOWElYWQlZTklYTYlODMlZTUlOWElYWJVU181NzQNCnNzOi8vWVdWekxUSTFOaTFuWTIwNlJqVmlTMnRpT1dkbmEweDRORXBpVVhKaVRHNDNUR3BhUURFNU9DNDRMamt5TGpnME9qUTBPVFExI1Bvb2xfJWU5JWE2JTgzJWU1JTlhJWFkJWU5JWE2JTgzJWU1JTlhJWFiVVNfNTMxDQpzczovL1lXVnpMVEkxTmkxblkyMDZRMVZ1WkZOYWJsbHpVRXRqZFRaTGFqaFVTRlpOUWtoRVFESXdOeTR5TkRRdU5qY3VNVFE1T2pNNU56Y3kjUG9vbF8lZTklYTYlODMlZTUlOWElYWQlZTklYTYlODMlZTUlOWElYWJVU18zOTANCg==
+port: 40000
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:40001
+proxies:
+- name: Youtube不良林
+  type: http
+  server: buliang0.tk
+  port: 6666
+- name: 40010
+  type: ss
+  server: 51.195.62.220
+  port: 811
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 40011
+  type: ss
+  server: 185.44.76.188
+  port: 31764
+  cipher: aes-256-gcm
+  password: YgusH2MWA8PWc3p2VDsR7AVv
+- name: 40012
+  type: ss
+  server: 81.19.208.107
+  port: 50168
+  cipher: aes-256-gcm
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+- name: 40013
+  type: ss
+  server: 185.44.76.188
+  port: 31572
+  cipher: aes-256-gcm
+  password: n8w4StnbVD9dmXYn4Ajt87EA
+- name: 40014
+  type: vmess
+  server: 35.178.68.152
+  port: 47611
+  cipher: auto
+  uuid: 97a4d167-b361-48b8-b004-8bc45669e334
+  alterId: 0
+  network: tcp
+  ws-path: /
+  ws-headers:
+    Host: ''
+- name: 40015
+  type: trojan
+  server: hk31.ssgnode.ga
+  port: 443
+  password: 41742_920c8caa
+  sni: ''
+- name: 40016
+  type: ss
+  server: 85.10.50.164
+  port: 40093
+  cipher: aes-256-gcm
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+- name: 40017
+  type: vmess
+  server: 185.225.69.134
+  port: 45081
+  cipher: auto
+  uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9
+  alterId: 64
+  network: tcp
+  ws-path: /
+  ws-headers:
+    Host: ''
+- name: 40018
+  type: trojan
+  server: id2-trojan.bonds.id
+  port: 443
+  password: 8d4ab0f0-79be-11eb-be0b-1239d0255272
+  sni: ''
+- name: 40019
+  type: ss
+  server: 137.59.52.107
+  port: 40093
+  cipher: aes-256-gcm
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+- name: 40020
+  type: ss
+  server: 137.59.52.107
+  port: 33992
+  cipher: aes-256-gcm
+  password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+- name: 40021
+  type: ss
+  server: 82.102.26.117
+  port: 47027
+  cipher: aes-256-gcm
+  password: Vt5pBJFwdtNB26cJbTXxm88Z
+- name: 40022
+  type: ss
+  server: 82.102.26.117
+  port: 44236
+  cipher: aes-256-gcm
+  password: FWrXcxPZjJxAN89xLgqY3Acp
+- name: 40023
+  type: vmess
+  server: 54.95.81.196
+  port: 53923
+  cipher: auto
+  uuid: d0d92cd9-f6cc-432d-97ad-849f59e95bc0
+  alterId: 0
+  network: tcp
+  ws-path: /
+  ws-headers:
+    Host: ''
+- name: 40024
+  type: trojan
+  server: tky3.ssgnode.ga
+  port: 443
+  password: 23115_5a451f03
+  sni: ''
+- name: 40025
+  type: trojan
+  server: nl-trojan.bonds.id
+  port: 443
+  password: 94af0550-902b-11eb-b135-1239d0255272
+  sni: ''
+- name: 40026
+  type: trojan
+  server: nl-trojan.bonds.id
+  port: 443
+  password: 96884680-77e6-11eb-8d67-1239d0255272
+  sni: ''
+- name: 40027
+  type: ss
+  server: 91.90.123.115
+  port: 45329
+  cipher: aes-256-gcm
+  password: CXSjgD7u7Ar7GxkZ4CgTMUsj
+- name: 40028
+  type: trojan
+  server: sg1-trojan.bonds.id
+  port: 443
+  password: 5c5ceb40-902b-11eb-945a-1239d0255272
+  sni: ''
+- name: 40029
+  type: trojan
+  server: sg3-trojan.bonds.id
+  port: 443
+  password: 97fdf760-7bbf-11eb-8e14-1239d0255272
+  sni: ''
+- name: 40030
+  type: trojan
+  server: sg3-trojan.bonds.id
+  port: 443
+  password: 4c7985e0-79e8-11eb-b8d3-1239d0255272
+  sni: ''
+- name: 40031
+  type: vmess
+  server: 211.23.132.124
+  port: 9233
+  cipher: auto
+  uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9
+  alterId: 64
+  network: ws
+  ws-path: /
+  ws-headers:
+    Host: ''
+- name: 40032
+  type: ss
+  server: 207.244.67.149
+  port: 39772
+  cipher: aes-256-gcm
+  password: CUndSZnYsPKcu6Kj8THVMBHD
+- name: 40033
+  type: ss
+  server: 207.244.67.149
+  port: 33992
+  cipher: aes-256-gcm
+  password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+- name: 40034
+  type: ss
+  server: 198.8.92.84
+  port: 44945
+  cipher: aes-256-gcm
+  password: F5bKkb9ggkLx4JbQrbLn7LjZ
+- name: 40035
+  type: ss
+  server: 198.147.22.87
+  port: 40093
+  cipher: aes-256-gcm
+  password: x23Z4LGkGDkThZ9Kaz4DURQp
+- name: 40036
+  type: ss
+  server: 23.82.11.49
+  port: 50168
+  cipher: aes-256-gcm
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+- name: 40037
+  type: ss
+  server: 104.200.131.165
+  port: 33992
+  cipher: aes-256-gcm
+  password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+- name: 40038
+  type: ssr
+  server: 65.49.193.120
+  port: 502
+  cipher: aes-256-cfb
+  password: bwhskrskr01
+  protocol: origin
+  protocol-param: t.me/SSRSUB
+  obfs: plain
+  obfs-param: ''
+- name: 40039
+  type: trojan
+  server: us-trojan.bonds.id
+  port: 443
+  password: 38239dd0-902b-11eb-afc1-1239d0255272
+  sni: ''
+proxy-groups:
+- name: Proxy2
+  type: select
+  proxies:
+  - Youtube不良林
+- name: proxy40010
+  type: select
+  proxies:
+  - 40010
+- name: proxy40011
+  type: select
+  proxies:
+  - 40011
+- name: proxy40012
+  type: select
+  proxies:
+  - 40012
+- name: proxy40013
+  type: select
+  proxies:
+  - 40013
+- name: proxy40014
+  type: select
+  proxies:
+  - 40014
+- name: proxy40015
+  type: select
+  proxies:
+  - 40015
+- name: proxy40016
+  type: select
+  proxies:
+  - 40016
+- name: proxy40017
+  type: select
+  proxies:
+  - 40017
+- name: proxy40018
+  type: select
+  proxies:
+  - 40018
+- name: proxy40019
+  type: select
+  proxies:
+  - 40019
+- name: proxy40020
+  type: select
+  proxies:
+  - 40020
+- name: proxy40021
+  type: select
+  proxies:
+  - 40021
+- name: proxy40022
+  type: select
+  proxies:
+  - 40022
+- name: proxy40023
+  type: select
+  proxies:
+  - 40023
+- name: proxy40024
+  type: select
+  proxies:
+  - 40024
+- name: proxy40025
+  type: select
+  proxies:
+  - 40025
+- name: proxy40026
+  type: select
+  proxies:
+  - 40026
+- name: proxy40027
+  type: select
+  proxies:
+  - 40027
+- name: proxy40028
+  type: select
+  proxies:
+  - 40028
+- name: proxy40029
+  type: select
+  proxies:
+  - 40029
+- name: proxy40030
+  type: select
+  proxies:
+  - 40030
+- name: proxy40031
+  type: select
+  proxies:
+  - 40031
+- name: proxy40032
+  type: select
+  proxies:
+  - 40032
+- name: proxy40033
+  type: select
+  proxies:
+  - 40033
+- name: proxy40034
+  type: select
+  proxies:
+  - 40034
+- name: proxy40035
+  type: select
+  proxies:
+  - 40035
+- name: proxy40036
+  type: select
+  proxies:
+  - 40036
+- name: proxy40037
+  type: select
+  proxies:
+  - 40037
+- name: proxy40038
+  type: select
+  proxies:
+  - 40038
+- name: proxy40039
+  type: select
+  proxies:
+  - 40039
+rules:
+- SRC-PORT,40010,proxy40010
+- SRC-PORT,40011,proxy40011
+- SRC-PORT,40012,proxy40012
+- SRC-PORT,40013,proxy40013
+- SRC-PORT,40014,proxy40014
+- SRC-PORT,40015,proxy40015
+- SRC-PORT,40016,proxy40016
+- SRC-PORT,40017,proxy40017
+- SRC-PORT,40018,proxy40018
+- SRC-PORT,40019,proxy40019
+- SRC-PORT,40020,proxy40020
+- SRC-PORT,40021,proxy40021
+- SRC-PORT,40022,proxy40022
+- SRC-PORT,40023,proxy40023
+- SRC-PORT,40024,proxy40024
+- SRC-PORT,40025,proxy40025
+- SRC-PORT,40026,proxy40026
+- SRC-PORT,40027,proxy40027
+- SRC-PORT,40028,proxy40028
+- SRC-PORT,40029,proxy40029
+- SRC-PORT,40030,proxy40030
+- SRC-PORT,40031,proxy40031
+- SRC-PORT,40032,proxy40032
+- SRC-PORT,40033,proxy40033
+- SRC-PORT,40034,proxy40034
+- SRC-PORT,40035,proxy40035
+- SRC-PORT,40036,proxy40036
+- SRC-PORT,40037,proxy40037
+- SRC-PORT,40038,proxy40038
+- SRC-PORT,40039,proxy40039
